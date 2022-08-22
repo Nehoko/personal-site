@@ -1,5 +1,12 @@
 import React from 'react'
 
 export function MainPage() {
-    return <div>Main Page</div>
+    return (
+        <div>
+            <span>
+                Born in 1995 in Moscow, Russia. I believe everyone can do
+                everything.
+            </span>
+        </div>
+    )
 }
