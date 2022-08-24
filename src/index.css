@@ -4,15 +4,29 @@
 
 @layer base {
   h1 {
-    @apply text-2xl;
+    @apply text-4xl;
     font-family: "Neue Montreal", sans-serif;
     letter-spacing: 0.2em;
   }
   h2 {
-    @apply text-xl
+    @apply text-3xl;
+    font-family: "Neue Montreal", sans-serif;
+    letter-spacing: 0.2em;
   }
   h3 {
-    @apply text-lg
+    @apply text-2xl;
+    font-family: "Neue Montreal", sans-serif;
+    letter-spacing: 0.2em;
+  }
+  h4 {
+    @apply text-xl;
+    font-family: "Neue Montreal", sans-serif;
+    letter-spacing: 0.2em;
+  }
+  h5 {
+    @apply text-lg;
+    font-family: "Neue Montreal", sans-serif;
+    letter-spacing: 0.2em;
   }
 }
 
