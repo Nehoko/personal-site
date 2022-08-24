@@ -26,12 +26,16 @@ root {
 
 #header {
   height: var(--header-height);
+  position: absolute;
+  top: 35px;
 }
 
 #body {
-  margin-top: calc(15px + 4px + var(--header-height));
+  margin-top: calc(10px + var(--header-height));
   display: flex;
   justify-content: flex-end;
+  font-weight: bold;
+  text-align: left;
 }
 
 body {
