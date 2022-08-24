@@ -4,7 +4,9 @@
 
 @layer base {
   h1 {
-    @apply text-2xl
+    @apply text-2xl;
+    font-family: "Neue Montreal", sans-serif;
+    letter-spacing: 0.2em;
   }
   h2 {
     @apply text-xl
@@ -15,16 +17,28 @@
 }
 
 root {
-  --pad: max(20px, 4vmin)
+  --pad: max(20px, 4vmin);
+}
+
+:root {
+  --header-height: 112px;
+}
+
+#header {
+  height: var(--header-height);
+}
+
+#body {
+  margin-top: calc(15px + 4px + var(--header-height));
+  display: flex;
+  justify-content: flex-end;
 }
 
 body {
   margin: 0;
-  font-family: "Neue Montreal", sans-serif;
-  letter-spacing: 0.2em;
-  /*font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',*/
-  /*  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',*/
-  /*  sans-serif;*/
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
