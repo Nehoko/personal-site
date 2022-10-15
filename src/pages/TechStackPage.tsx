@@ -1,28 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
+import FrontEnd from '../components/tech_stack/FrontEnd'
+import BackEnd from '../components/tech_stack/BackEnd'
+import Sre from '../components/tech_stack/Sre'
+import TechNavigation, { FRONTEND, BACKEND, SRE } from '../components/tech_stack/TechNavigation'
+
 
 export function TechStackPage() {
+    const [stack, setStack] = useState<string>(FRONTEND)
+
     return (
-        <div>
-            <h3>Tech Stack:</h3>
-            <br />
-            <h4>Backend:</h4>
-            <br />
-            <h5>Languages:</h5>
-            <br />
-            <ul className="list-disc">
-                <li>java 8-17</li>
-                <li>kotlin</li>
-            </ul>
-            <br />
-            <h5>Frameworks:</h5>
-            <br />
-            <ul className="list-disc">
-                <li>Spring 5</li>
-                <li>Spring boot</li>
-                <li>Spring MVC</li>
-                <li>Spring Cloud</li>
-                <li>Spring Security</li>
-            </ul>
+        <div className='flex flex-row divide-x-2 divide-solid'>
+            <TechNavigation className='mr-4' setStack={setStack} />
+            <div className='pl-4'>
+                {stack === FRONTEND && <FrontEnd />}
+                {stack === BACKEND && <BackEnd />}
+                {stack === SRE && <Sre />}
+            </div>
         </div>
     )
 }

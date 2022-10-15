@@ -2,56 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  h1 {
-    @apply text-4xl;
-    font-family: "Neue Montreal", sans-serif;
-    letter-spacing: 0.2em;
-  }
-  h2 {
-    @apply text-3xl;
-    font-family: "Neue Montreal", sans-serif;
-    letter-spacing: 0.2em;
-  }
-  h3 {
-    @apply text-2xl;
-    font-family: "Neue Montreal", sans-serif;
-    letter-spacing: 0.2em;
-  }
-  h4 {
-    @apply text-xl;
-    font-family: "Neue Montreal", sans-serif;
-    letter-spacing: 0.2em;
-  }
-  h5 {
-    @apply text-lg;
-    font-family: "Neue Montreal", sans-serif;
-    letter-spacing: 0.2em;
-  }
-}
-
-root {
-  --pad: max(20px, 4vmin);
-}
-
-:root {
-  --header-height: 112px;
-}
-
-#header {
-  height: var(--header-height);
-  position: absolute;
-  top: 35px;
-}
-
-#body {
-  margin-top: calc(10px + var(--header-height));
-  display: flex;
-  justify-content: flex-end;
-  font-weight: bold;
-  text-align: left;
-}
-
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

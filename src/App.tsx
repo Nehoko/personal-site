@@ -1,23 +1,18 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import { MainPage } from './pages/MainPage'
-import { TechStackPage } from './pages/TechStackPage'
 import { SiteHeader } from './components/SiteHeader'
+import { TechStackPage } from './pages/TechStackPage'
 
 function App() {
     return (
-        <div className="flex flex-row h-full max-h-full w-full max-w-full min-h-screen max-h-screen h-screen justify-between">
-            <div className="box-border border-black border m-[20px] p-[20px] dark:bg-black w-full overflow-y-auto scrollbar-hide">
-                <SiteHeader />
-                <div id="body">
-                    <Routes>
-                        <Route path="/" element={<MainPage />}></Route>
-                        <Route
-                            path="/tech_stack"
-                            element={<TechStackPage />}
-                        ></Route>
-                    </Routes>
-                </div>
+        <div className='h-full max-h-full w-full max-w-full min-h-screen max-h-screen h-screen justify-between mx-4'>
+            <SiteHeader />
+            <div id='body'>
+                <Routes>
+                    <Route path='/' element={<MainPage />} />
+                    <Route path='/tech_stack' element={<TechStackPage />} />
+                </Routes>
             </div>
         </div>
     )
